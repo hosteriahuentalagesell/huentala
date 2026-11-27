@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="es">
 <head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TL4VSN7K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hostería Huentala – Villa Gesell, a una cuadra de la playa</title>
@@ -177,6 +183,7 @@ footer[style*="repeat(3, 1fr)"]{padding-left:max(88px,calc((100% - 1100px)/2))!i
 </footer>
 </div>
 
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href*=\"wa.me\"]");if(a&&window.gtag){gtag("event","click_whatsapp",{pagina:location.pathname,origen:"boton"});}});</script>
 <script>
 (function(){
 var NUM="5492267469217",$=function(i){return document.getElementById(i)};
@@ -191,7 +198,7 @@ var t="Hola, quiero consultar disponibilidad en Hostería Huentala.";
 if(a)t+="\nIngreso: "+f(a);if(b)t+="\nSalida: "+f(b);
 t+="\nHuéspedes: "+$("huespedes").value+"\nAlojamiento: "+$("alojamiento").value;
 if($("mascota").checked)t+="\nViajo con mascota pequeña.";
-window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank","noopener");
+if(window.gtag)gtag("event","click_whatsapp",{pagina:location.pathname,origen:"formulario"});window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank","noopener");
 });
 })();
 </script>
