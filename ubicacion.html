@@ -74,6 +74,8 @@ footer[style*="repeat(3, 1fr)"]{padding-left:max(88px,calc((100% - 1100px)/2))!i
 [style*="minmax(260px, 1fr)"]{grid-template-columns:repeat(4,1fr)!important}
 [style*="max-width: 1440px"]{max-width:none!important}
 [style*="max-width: 1440px"]>header,[style*="max-width: 1440px"]>section,[style*="max-width: 1440px"]>footer{padding-left:max(88px,calc((100% - 1504px)/2))!important;padding-right:max(88px,calc((100% - 1504px)/2))!important}
+h1,h2,h3,p[style*="font-size: 22px"],p[style*="font-size: 20px"]{zoom:.8889}
+body:has(#inicio) [style*="max-width: 1440px"]>section:nth-of-type(-n+2) :is(h1,h2,h3,p){zoom:1}
 }
 
 @media (max-width:820px){
